@@ -1,0 +1,32 @@
+package Hashmaps;
+
+import java.util.Arrays;
+import java.util.HashMap;
+
+public class TwoSum {
+    public static int  []twoSum(int []nums, int target){
+
+        HashMap<Integer,Integer> seen=new HashMap<>();
+
+        for(int i=0;i<nums.length;i++){
+
+            int fromSubtractedValue= target-nums[i];
+
+
+            if(seen.containsKey(fromSubtractedValue)){
+
+                return new int[] {seen.get(fromSubtractedValue),i};
+            }
+
+                 seen.put(nums[i],i);
+
+
+        }
+
+        return new int  [] {-1,-1};
+    }
+
+    public static void main(String[] args) {
+        TwoSum ts=new TwoSum();
+        System.out.println(Arrays.toString(ts.twoSum(new int[]{2, 7, 11, 15}, 9)));    }
+}

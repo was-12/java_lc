@@ -1,4 +1,4 @@
-package Strings;
+package SlidingWindow;
 
 public class MaxSumSlidingWIndow {
 
