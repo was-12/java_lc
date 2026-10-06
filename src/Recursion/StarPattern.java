@@ -32,6 +32,15 @@ public class StarPattern {
 
     }
 
+    public static void pattern2(int n) {
+     for(int i=1;i<=n;i++){
+        // System.out.println("i".repeat(i+1));
+     
+
+     }
+    }
+
+
     public static void main(String[] args) {
         StarPattern sp=new StarPattern();
         sp.printStar2(4,0
